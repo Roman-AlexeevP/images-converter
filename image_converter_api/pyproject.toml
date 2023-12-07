@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "image-converter-api"
+version = "0.1.0"
+description = ""
+authors = ["Roman-AlexeevP <alexeevroma@gmail.com>"]
+readme = "README.md"
+packages = [{include = "image_converter_api", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.104.1"
+python-multipart = "^0.0.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
