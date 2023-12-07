@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "image-converter-api"
+name = "image_converter_api"
 version = "0.1.0"
 description = ""
 authors = ["Roman-AlexeevP <alexeevroma@gmail.com>"]
@@ -9,9 +9,11 @@ readme = "README.md"
 python = "^3.8.1"
 fastapi = "^0.104.1"
 uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+python-multipart = "^0.0.6"
+
 
 [tool.poetry.group.dev.dependencies]
-pyproject-pre-commit = "^0.1.2"
+pre-commit = "^3.5.0"
 
 [build-system]
 requires = ["poetry-core"]
